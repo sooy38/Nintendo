@@ -1,0 +1,92 @@
+.hover-container {
+  display: flex; 
+  gap: 20px; 
+}
+
+.hover-target {
+  position: relative;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  cursor: pointer;
+  padding: 20px; 
+  width: 282px; 
+  border: none; 
+  transition: background-color 0.3s ease;
+}
+
+.item-image {
+  width: 100%; 
+  height: auto;
+  max-width: 100%;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.2); 
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 360px;
+  border: 1px solid rgba(204, 204, 204, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+.popup-image {
+  width: 100%; 
+  height: auto; 
+  transition: height 0.3s ease;
+}
+
+.hover-target:hover .popup-image {
+  height: 200px; 
+}
+
+.popup p {
+  margin: 5px 0; 
+  text-align: left; 
+  color: black; 
+}
+
+.more-button {
+  width: 100%; 
+  padding: 10px; 
+  background-color: var(--primary-main); 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.more-button:hover {
+  background-color: darken(var(--primary-main), 10%);
+}
+
+.hover-target:hover {
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.hover-target:hover .popup {
+  display: block; 
+}
+
+.release-date {
+  font-size: 12px; 
+  color: lightgray; 
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold; 
+  color: #ff0000;
+}

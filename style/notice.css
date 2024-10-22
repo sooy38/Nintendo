@@ -1,0 +1,41 @@
+.notice {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.notice > .inner-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.notice ul {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.notice .notice-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.notice .notice-item a:hover span {
+  color: var(--primary-main);
+}
+
+.notice .notice-item img {
+  width: 100%;
+  max-width: 282px;
+}
+
+.notice .notice-item a span {
+  color: var(--primary-black);
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.2s;
+}

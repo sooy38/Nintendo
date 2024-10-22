@@ -1,0 +1,140 @@
+.magazine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 200px;
+}
+
+.magazine > .title {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 12px;
+}
+
+.magazine > .title h2 {
+  color: var(--primary-black);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.magazine > .title p {
+  color: #666666;
+  font-size: 16px;
+}
+
+.magazine > .inner-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; 
+  padding-top: 36px;
+}
+
+.magazine ul {
+  display: flex;
+  gap: 12px;
+  position: relative;
+  width: calc(100% + 12px); 
+  padding: 0 12px;
+}
+
+.button-container {
+  float: right;
+  display: flex; 
+  align-items: center; 
+}
+
+.slide-button {
+  background-color: var(--primary-main);
+  color: white;
+  border: none;
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px; 
+}
+
+.slide-button:hover {
+  background-color: #ffb6c1;
+}
+
+.magazine .magazine-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: calc(25% - 12px);
+  transition: transform 0.3s ease; 
+}
+
+.magazine-item > .magazine-item-target {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.magazine-item:hover .magazine-item-popup {
+  display: flex;
+  z-index: 50;
+}
+
+.magazine-item > .magazine-item-popup {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 360px;
+  border: 1px solid rgba(204, 204, 204, 0.5); 
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+}
+
+.magazine-item-popup .popup-image {
+  height: 100%;
+}
+
+.magazine-item-popup .desscription {
+  display: flex;
+  flex-direction: column;
+}
+
+.magazine-item-popup .release-date {
+  font-size: 12px;
+  color: #666666;
+}
+
+.magazine-item-popup .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.magazine-item-popup .price {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-main);
+}
+
+.magazine-item-popup .more-button {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-main);
+  color: white;
+  cursor: pointer;
+}

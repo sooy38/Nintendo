@@ -1,0 +1,129 @@
+.hardware {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.hardware > .title {
+  padding: 0 12px;
+  margin-bottom: 32px;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 500;
+  font-weight: bold;
+}
+
+.hardware .tab-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.hardware .tab-wrapper .slide-button {
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
+  margin: 0 !important;
+}
+
+.hardware .tab-wrapper .slide-button:disabled {
+  opacity: 0.8;
+}
+
+.hardware .tab {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 135px;
+}
+
+.hardware .tab li {
+  max-width: calc(100% / 5);
+  cursor: pointer;
+}
+
+.hardware .tab li img {
+  width: 100%;
+  height: 100%;
+}
+
+.hardware .tab-contents {
+  width: 100%;
+}
+
+.hardware .tab-contents > div {
+  display: none;
+  gap: 14px;
+  width: 100%;
+  padding: 30px 56px 30px 14px;
+  border: 1px solid lightgray;
+  border-radius: 40px;
+  margin-bottom: 60px;
+}
+
+.hardware .tab-contents > div.active {
+  display: flex;
+}
+
+.hardware .tab-contents div .main-image {
+  width: 506px;
+  height: 285px;
+}
+
+.hardware .tab-contents div .main-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.hardware .tab-contents div .content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  height: 100%;
+}
+
+.hardware .tab-contents div .content .title {
+  margin-bottom: 8px;
+  color: #000000;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.hardware .tab-contents div .content .amount {
+  margin-bottom: 22px;
+  color: var(--primary-main);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.hardware .tab-contents div .content .sub-image {
+  width: 565px;
+  height: 127px;
+  margin-bottom: 12px;
+}
+
+.hardware .tab-contents div .content .sub-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.hardware .tab-contents div .content .view-more-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 330px;
+  height: 58px;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--primary-main);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}

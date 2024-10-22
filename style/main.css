@@ -1,0 +1,12 @@
+@import url("/style/reset.css");
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inner-wrapper {
+  width: 100%;
+  max-width: 1200px;
+}

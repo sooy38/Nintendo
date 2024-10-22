@@ -1,0 +1,79 @@
+.prepaid-number-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 144px;
+  margin-bottom: 200px;
+  background-image: url(../images/prepaid_banner/background.jpg);
+  background-color: #ffcc00;
+}
+
+.prepaid-number-banner > .title {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--primary-white);
+}
+
+.prepaid-number-banner > .title h2 {
+  color: inherit;
+  font-size: 30px;
+}
+
+.prepaid-number-banner > .title span {
+  color: inherit;
+  font-size: 45px;
+}
+
+.prepaid-number-banner .character {
+  position: absolute;
+}
+
+.prepaid-number-banner .character.image-1 {
+  top: -95px;
+  right: 260px;
+  height: 155px;
+  animation-name: character-01;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes character-01 {
+  0% {
+    top: -95px;
+  }
+  50% {
+    top: -145px;
+  }
+  100% {
+    top: -95px;
+  }
+}
+
+.prepaid-number-banner .character.image-2 {
+  bottom: -60px;
+  left: 140px;
+  height: 170px;
+  animation-name: character-02;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in;
+}
+
+@keyframes character-02 {
+  0% {
+    left: 40px;
+  }
+  50% {
+    bottom: -30px;
+    left: 80px;
+  }
+  100% {
+    left: 140px;
+  }
+}

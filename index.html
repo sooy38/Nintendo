@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    >
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/hardware.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/magazine.css">
+    <link rel="stylesheet" href="./style/main_slide.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/new_game.css">
+    <link rel="stylesheet" href="./style/notice.css">
+    <link rel="stylesheet" href="./style/play_together.css">
+    <link rel="stylesheet" href="./style/popup.css">
+    <link rel="stylesheet" href="./style/prepaid_number_banner.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="inner-wrapper">
+          <div class="logo">
+            <h1>닌텐도 온라인 스토어</h1>
+            <img src="images/logo.png" alt="logo">
+          </div>
+
+          <div class="menu">
+            <div class="top">
+              <div class="search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text">
+              </div>
+
+              <div class="icon-menu">
+                <button><i class="fa-solid fa-cart-shopping"></i></button>
+                <button><i class="fa-regular fa-user"></i></button>
+              </div>
+            </div>
+            <nav>
+              <ul class="gnb">
+                <li class="main">
+                  <a href="#none">전체상품</a>
+                </li>
+                <li class="main with-sub">
+                  <a href="#none">디지털 상품</a>
+                  <ul class="sub s1">
+                    <li><a href="#none">BEST</a></li>
+                    <li><a href="#none">NEW</a></li>
+                    <li><a href="#none">SALE</a></li>
+                    <li><a href="#none">무료 상품</a></li>
+                    <li><a href="#none">디지털 전체 상품</a></li>
+                    <li><a href="#none">디지털 상품 바로가기</a></li>
+                  </ul>
+                </li>
+                <li class="main with-sub">
+                  <a href="#none">실물 상품</a>
+                  <ul class="sub s2">
+                    <li><a href="#none">본체/주변기기</a></li>
+                    <li><a href="#none">굿즈/소프트웨어</a></li>
+                    <li><a href="#none">플래티넘 포인트 교환 상품</a></li>
+                    <li><a href="#none">실물 전체 상품</a></li>
+                    <li><a href="#none">실물 상품 바로가기</a></li>
+                  </ul>
+                </li>
+                <li class="main with-sub">
+                  <a href="#none">특집</a>
+                  <ul class="sub s3">
+                    <li><a href="#none">픽업</a></li>
+                    <li><a href="#none">마리오 소프트웨어</a></li>
+                    <li><a href="#none">젤다의 전설 소프트웨어 특집</a></li>
+                    <li><a href="#none">소프트웨어 메이커 타이틀 특집</a></li>
+                    <li><a href="#none">닌텐도 매거진 2024 summer</a></li>
+                    <li><a href="#none">특집 바로가기</a></li>
+                  </ul>
+                </li>
+                <li class="main">
+                  <a href="#none">Nintendo Switch Online</a>
+                </li>
+                <li class="main">
+                  <a href="#none">닌텐도 선불 번호</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="gnb-bg"></div>
+      </header>
+
+      <section class="main-slide" aria-label="슬라이드 섹션">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/main_slide/main_slide_01.jpeg" alt="Slide 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/main_slide/main_slide_02.jpg" alt="Slide 2">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/main_slide/main_slide_03.jpg" alt="Slide 3">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/main_slide/main_slide_04.jpg" alt="Slide 4">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/main_slide/main_slide_05.jpg" alt="Slide 5">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/main_slide/main_slide_06.jpg" alt="Slide 6">
+            </div>
+          </div>
+        </div>
+        <div class="slide-buttons">
+          <button class="left main-slide-prev" id="prevSlide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="pagination-container">
+            <div class="pagination-circle">1/6</div>
+          </div>
+          <button class="right main-slide-next" id="nextSlide">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="notice" aria-label="공지사항 섹션">
+        <div class="inner-wrapper">
+          <ul>
+            <li class="notice-item">
+              <a href="#none">
+                <img
+                  src="images/notice/notice-01.jpg" alt="notice-01-image">
+                <span>닌텐도 매거진 2024 summer</span>
+              </a>
+            </li>
+            <li class="notice-item">
+              <a href="#none">
+                <img src="images/notice/notice-02.jpg" alt="notice-02-image">
+                <span>플래티넘 포인트 교환 상품</span>
+              </a>
+            </li>
+            <li class="notice-item">
+              <a href="#none">
+                <img src="images/notice/notice-03.jpg" alt="notice-03-image">
+                <span>Nintendo Switch Online</span>
+              </a>
+            </li>
+            <li class="notice-item">
+              <a href="#none">
+                <img src="images/notice/notice-04.jpg" alt="notice-04-image">
+                <span>SALE</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="magazine">
+        <div class="title">
+          <h2>닌텐도 매거진 2024 summer</h2>
+          <p>
+            Nintendo Switch의 최신 타이틀부터 추천 타이틀까지, 여러 가지
+            소프트웨어를 소개합니다.
+          </p>
+        </div>
+
+        <div class="inner-wrapper">
+          <ul>
+            <li class="magazine-item">
+              <div class="magazine-item-target">
+                <img src="images/magazine/magazine-01.jpg" alt="magazine-01-image">
+                <span>젤다의 전설 지혜의 투영</span>
+              </div>
+
+              <div class="magazine-item-popup">
+                <img
+                  src="images/magazine/magazine-01.jpg"
+                  alt="아이템 1 호버" class="popup-image">
+                <div class="description">
+                  <p class="release-date">발매 24.9.26</p>
+                  <p class="title">젤다의 전설 지혜의 투영</p>
+                  <p class="price">64,800원</p>
+                    <button class="more-button">더보기</button>
+                </div>
+              </div>
+            </li>
+            <li class="magazine-item">
+              <div class="magazine-item-target">
+                <img
+                  src="images/magazine/magazine-02.jpg" alt="magazine-02-image">
+                <span>슈퍼 마리오 파티 잼버리</span>
+              </div>
+
+              <div class="magazine-item-popup">
+                <img
+                  src="images/magazine/magazine-02.jpg"
+                  alt="아이템 2 호버" class="popup-image">
+                <div class="description">
+                  <p class="release-date">발매 24.10.17</p>
+                  <p class="title">슈퍼 마리오 파티 잼버리</p>
+                  <p class="price">64,800원</p>
+                    <button class="more-button">더보기</button>
+                </div>
+              </div>
+            </li>
+            <li class="magazine-item">
+              <div class="magazine-item-target">
+                <img
+                  src="images/magazine/magazine-03.jpg" alt="magazine-03-image">
+                <span>마리오&루이지 RPG 브라더십!</span>
+              </div>
+
+              <div class="magazine-item-popup">
+                <img
+                  src="images/magazine/magazine-03.jpg"
+                  alt="아이템 3 호버" class="popup-image">
+                <div class="description">
+                  <p class="release-date">발매 24.11.7</p>
+                  <p class="title">마리오&루이지 RPG 브라더십!</p>
+                  <p class="price">64,800원</p>
+                    <button class="more-button">더보기</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="magazine-item">
+              <div class="magazine-item-target">
+                <img
+                  src="images/magazine/magazine-04.jpg" alt="magazine-04-image">
+                <span>동키콩 리턴즈 HD</span>
+              </div>
+
+              <div class="magazine-item-popup">
+                <img
+                  src="images/magazine/magazine-04.jpg"
+                  alt="아이템 4 호버" class="popup-image">
+                <div class="description">
+                  <p class="release-date">발매 25.1.16</p>
+                  <p class="title">동키콩 리턴즈 HD</p>
+                  <p class="price">64,800원</p>
+                    <button class="more-button">더보기</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="prepaid-number-banner">
+        <div class="title">
+          <h2>
+            Nintendo Switch
+            <br>
+            닌텐도 선불 번호 구입
+          </h2>
+          <span>
+            <a href="#none"><i class="fa-solid fa-angle-right"></i></a>
+          </span>
+        </div>
+        <img
+          class="character image-1"
+          src="images/prepaid_banner/character-01.png" alt="character-01-image">
+        <img
+          class="character image-2"
+          src="images/prepaid_banner/character-02.png" alt="character-02-image">
+      </section>
+
+      <section class="new-game">
+        <div class="title">
+          <h2>NEW 출시 게임</h2>
+          <p>새로운 닌텐도 게임이 지금 출시되었거나 곧 출시됩니다.</p>
+        </div>
+
+        <div class="content">
+          <div class="inner-wrapper">
+            <div class="description">
+              <h2>2024년 닌텐도로 출시되는 최고의 게임들</h2>
+              <p>
+                2024년 플레이 가능할 것으로 기대되는 닌텐도 출시 예정작을
+                영상으로 만나보세요.
+              </p>
+              <button>
+                <span>더 보기</span>
+              </button>
+              <div class="view-list">
+                <div data-video-src="images/new_game/new-game-1.mp4">
+                  <img
+                    src="images/new_game/new-game-01.jpg" alt="new-game-01-image">
+                  <span>젤다의 전설 지혜의 투명</span>
+                </div>
+
+                <div data-video-src="images/new_game/new-game-2.mp4">
+                  <img
+                    src="images/new_game/new-game-02.jpg" alt="new-game-02-image">
+                  <span>슈퍼 마리오 파티 잼버리</span>
+                </div>
+
+                <div data-video-src="images/new_game/new-game-3.mp4">
+                  <img
+                    src="images/new_game/new-game-03.jpg" alt="new-game-03-image">
+                  <span>루이지 멘션 2</span>
+                </div>
+              </div>
+            </div>
+            <div class="video-wrapper">
+              <div class="background"></div>
+              <video class="video">
+                <source src="images/new_game/new.jpg" type="video/mp4">
+                브라우저가 비디오 태그를 지원하지 않습니다.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="play_together">
+        <div class="title">
+          <h2>함께 즐길 수 있는 게임 특집</h2>
+
+          <span class="button-container">
+            <button class="slide-button prev-button">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="slide-button next-button">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </span>
+        </div>
+
+        <div class="inner-wrapper">
+          <ul>
+            <li class="notice-item">
+              <a href="#none">
+                <img
+                  src="images/play_together/play_together_01.jpg" alt="play_together_01_image">
+                <span>Nintendo Switch Sports</span>
+              </a>
+            </li>
+            <li class="notice-item">
+              <a href="#none">
+                <img
+                  src="images/play_together/play_together_02.jpg" alt="play_together_02_image">
+                <span>Everybody 1-2-Switch!</span>
+              </a>
+            </li>
+            <li class="notice-item">
+              <a href="#none">
+                <img
+                  src="images/play_together/play_together_03.jpg"
+                  alt="play_together_03_image">
+                <span>모여봐요 동물의 숲</span>
+              </a>
+            </li>
+            <li class="notice-item">
+              <a href="#none">
+                <img
+                  src="images/play_together/play_together_04.jpg"
+                  alt="play_together_04_image">
+                <span>마리오 파티 슈퍼스타즈</span>
+              </a>
+            </li>
+            <li class="notice-item">
+              <a href="#none">
+                <img
+                  src="images/play_together/play_together_05.jpg"
+                  alt="play_together_05_image">
+                <span>피크민 4</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="hardware" aria-label="본체/주변기기 섹션">
+        <div class="title">본체/주변기기</div>
+        <div class="tab-contents">
+          <div id="tab1" class="active">
+            <div class="main-image">
+              <img src="images/hardware/hardware-01.jpg" alt="hardware-01">
+            </div>
+            <div class="content">
+              <div class="title">
+                Nintendo Switch(OLED 모델)
+                <br>
+                젤다의 전설 티어스 오브 더 킹덤 에디션
+              </div>
+              <div class="amount">425,000원</div>
+              <div class="sub-image">
+                <img src="images/hardware/hardware-01-01.jpg" alt="hardware-01">
+              </div>
+                <button class="view-more-button">더 보기</button>
+            </div>
+          </div>
+
+          <div id="tab2">
+            <div class="main-image">
+              <img src="images/hardware/hardware-02.jpg" alt="hardware-02">
+            </div>
+            <div class="content">
+              <div class="title">
+                Nintendo Switch(OLED 모델)
+                <br>
+                화이트
+              </div>
+              <div class="amount">415,000원</div>
+              <div class="sub-image">
+                <img src="images/hardware/hardware-01-02.jpg" alt="hardware-02">
+              </div>
+                <button class="view-more-button">더 보기</button>
+            </div>
+          </div>
+
+          <div id="tab3">
+            <div class="main-image">
+              <img src="images/hardware/hardware-03.jpg" alt="hardware-03">
+            </div>
+            <div class="content">
+              <div class="title">
+                Nintendo Switch(OLED 모델)
+                <br>
+                네온 블루 / 네온 레드
+              </div>
+              <div class="amount">415,000원</div>
+              <div class="sub-image">
+                <img src="images/hardware/hardware-01-03.jpg" alt="hardware-03">
+              </div>
+                <button class="view-more-button">더 보기</button>
+            </div>
+          </div>
+
+          <div id="tab4">
+            <div class="main-image">
+              <img src="images/hardware/hardware-04.jpg" alt="hardware-04">
+            </div>
+            <div class="content">
+              <div class="title">
+                Nintendo Switch
+                <br>
+                모여봐요 동물의 숲 에디션
+              </div>
+              <div class="amount">360,000원</div>
+              <div class="sub-image">
+                <img src="images/hardware/hardware-01-04.jpg" alt="hardware-04">
+              </div>
+                <button class="view-more-button">더 보기</button>
+            </div>
+          </div>
+
+          <div id="tab5">
+            <div class="main-image">
+              <img src="images/hardware/hardware-05.jpg" alt="hardware-05">
+            </div>
+            <div class="content">
+              <div class="title">
+                Nintendo Switch(OLED 모델)
+                <br>
+                스플래툰 3 에디션
+              </div>
+              <div class="amount">425,000원</div>
+              <div class="sub-image">
+                <img src="images/hardware/hardware-01-05.jpg" alt="hardware-05">
+              </div>
+                <button class="view-more-button">더 보기</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-wrapper">
+          <button class="slide-button prev-button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <ul class="tab">
+            <li class="i1 active" data-alt="tab1">
+              <img src="images/hardware/hardware-01.jpg" alt="hardware-01">
+            </li>
+            <li data-alt="tab2">
+              <img src="images/hardware/hardware-02.jpg" alt="hardware-02">
+            </li>
+            <li data-alt="tab3">
+              <img src="images/hardware/hardware-03.jpg" alt="hardware-03">
+            </li>
+            <li data-alt="tab4">
+              <img src="images/hardware/hardware-04.jpg" alt="hardware-04">
+            </li>
+            <li data-alt="tab5">
+              <img src="images/hardware/hardware-05.jpg" alt="hardware-05">
+            </li>
+          </ul>
+
+          <button class="slide-button next-button">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="sub-footer">
+          <div class="menu">
+            <a href="#none">실물 전체 상품</a>
+            <a href="#none">닌텐도 선불 번호</a>
+            <a href="#none">무료 상품</a>
+            <a href="#none">도움말</a>
+          </div>
+
+          <a class="top-button" href="#">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+
+        <div class="main-footer">
+          <div class="top">
+            <div class="menu">
+              <a href="#none">이용약관</a>
+              <a href="#none">개인정보처리방침</a>
+              <a href="#none">안전을 위한 주의사항</a>
+              <a href="#none">닌텐도 어카운트 이용 약관</a>
+            </div>
+
+            <div class="sns">
+              <a href="https://www.facebook.com/Nintendo.kr" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://x.com/Nintendo_Korea" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/nintendoamerica/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCRCK5FCJtomQT3b88jXI_DA"
+                target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="content">
+            <p>
+              상호명 : 한국닌텐도주식회사 / 대표자명 : 미우라 타카히로 / 주소 :
+              서울특별시 중구 통일로2길 16 AIA타워 2층
+            </p>
+            <p>
+              사업자등록번호 : 120-87-03578 / 통신판매업 신고 :
+              2012-서울중구-1028 / 고객지원센터 : 1670-9900.
+            </p>
+            <p>© 2024 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+          </div>
+
+          <img class="logo" src="images/logo.png" alt="logo">
+        </div>
+      </footer>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/menu.js"></script>
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // 비디오 관련 코드
+        const videoWrapper = document.querySelector(".video");
+        const imageDivs = document.querySelectorAll(".view-list > div");
+    
+        if (videoWrapper) {
+          imageDivs.forEach((div) => {
+            div.addEventListener("mouseenter", () => {
+              const videoSrc = div.getAttribute("data-video-src");
+              videoWrapper.querySelector("source").src = videoSrc; 
+              videoWrapper.load();
+              videoWrapper.currentTime = 8; 
+              videoWrapper.play();
+            });
+    
+            div.addEventListener("mouseleave", () => {
+              videoWrapper.pause();
+              videoWrapper.currentTime = 0;
+            });
+          });
+        }
+    
+        // Swiper 초기화
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          navigation: {
+            nextEl: ".main-swiper-next",
+            prevEl: ".main-swiper-prev",
+          },
+        });
+    
+        // 페이지 업데이트 함수
+        function updatePagination() {
+          const currentIndex = swiper.realIndex + 1; 
+          const totalSlides = swiper.slides.length;
+          document.querySelector(".pagination-circle").textContent = `${currentIndex}/${totalSlides}`;
+        }
+    
+        // 초기 페이지 업데이트
+        updatePagination();
+    
+        // 슬라이드 이동 시 페이지 업데이트
+        swiper.on("slideChange", updatePagination);
+    
+        // 플레이 투게더 스크립트 추가
+        const playTogetherList = document.querySelector(".play_together ul");
+        const items = document.querySelectorAll(".play_together .notice-item");
+    
+        let currentIndex = 0;
+    
+        function updateSlidePosition() {
+          const itemWidth = items[0].getBoundingClientRect().width; // 첫 번째 아이템의 너비
+          const translateX = itemWidth * currentIndex;
+          playTogetherList.style.transform = `translateX(-${translateX}px)`;
+        }
+    
+        const prevButton = document.querySelector(".play_together .prev-button");
+        const nextButton = document.querySelector(".play_together .next-button");
+    
+        if (prevButton && nextButton) {
+          prevButton.addEventListener("click", () => {
+            if (currentIndex > 0) {
+              currentIndex--;
+            }
+            updateSlidePosition();
+          });
+    
+          nextButton.addEventListener("click", () => {
+            if (currentIndex < items.length - 1) {
+              currentIndex++;
+              updateSlidePosition();
+            }
+            // 버튼 비활성화
+            nextButton.disabled = true; 
+          });
+        }
+    
+        // 초기 슬라이드 위치 업데이트
+        updateSlidePosition();
+        
+        // 노티스 슬라이드 버튼 관련 코드
+        const noticePrevButton = document.querySelector(".main-slide-prev");
+        const noticeNextButton = document.querySelector(".main-slide-next");
+    
+        if (noticePrevButton && noticeNextButton) {
+          noticePrevButton.addEventListener("click", () => {
+            const newIndex = (swiper.realIndex - 1 + swiper.slides.length) % swiper.slides.length;
+            swiper.slideTo(newIndex);
+            updatePagination();
+          });
+    
+          noticeNextButton.addEventListener("click", () => {
+            const newIndex = (swiper.realIndex + 1) % swiper.slides.length;
+            swiper.slideTo(newIndex);
+            updatePagination();
+          });
+        }
+      });
+    </script>
+    <script src="script/hardware.js"></script>
+  </body>
+</html>
